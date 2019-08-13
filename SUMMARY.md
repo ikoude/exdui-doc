@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [前言](qian-yan/README.md)
+* [前言](preface/README.md)
   * [介紹](preface/introduction.md)
   * [贡献](preface/contributing.md)
   * [FAQ](preface/faq.md)
@@ -27,4 +27,3 @@
     * [消息框](default/comboBox.md)
   * [扩展控件](extension/README.md)
     * [无](./)
-
