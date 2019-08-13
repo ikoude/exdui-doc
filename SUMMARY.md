@@ -11,6 +11,8 @@
   * [资源包机制](mechanism/res/README.md)
 * [函数](function/README.md)
   * [全局函数](function/globa/README.md )
+    * [Ex_Atom](function/globa/Ex_Atom.md)
+    * [Ex_GetLastErro.md](function/globa/Ex_GetLastErro.md)
   * [窗口函数](function/window/README.md)
   * [控件函数](function/component/README.md)
   * [绘图函数](function/draw/README.md)
