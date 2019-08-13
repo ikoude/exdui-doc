@@ -1,0 +1,16 @@
+Title: Ex_SetLastError
+Date: 2019年8月4日11时52分21秒
+
+### 设置引擎错误
+> 设置ExDirectUI引擎的最后一次错误代码
+
+### 声明
+```table
+动态库命令(-)   |   返回值类型(-)   |   库文件名(-)   |   参数量(-)   |   备注(-)  |
+Ex_SetLastError   |   整数型   |   libexdui.dll   |   1   | 设置引擎错误|
+```
+### 参数列表(Ex_SetLastError)
+```table
+参数名(<)   |   类型(-)   |   参考(-)   |   可空（NULL）(-)   |   备注(-)  |  索引(-)  |
+nError   |   整数型   |   -   |   ×   |    引擎发生的最后一次错误的错误代码，取值范围详见 Ex_GetLastError 索引  |[Ex_GetLastError](http://doc.exdui.org/read/main/ex/ex_getlasterror) |
+```
