@@ -30,7 +30,8 @@ ExDirectUI（Exdui）引擎是一款采用DirectUI概念，基于GDI/Direct2D绘
   * [窗口函数](./) 0%
   * [控件函数](./) 0%
   * [绘图函数](./) 0%
-* [常量](https://)
+  * [辅助函数](./) 0%
+* [常量](./)
 
 > 本文档最后由 [@IKOUDE](https://github.com/ikoude) 维护于 2019年 8 月 13 日。
 
