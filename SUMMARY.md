@@ -9,6 +9,14 @@
   
 * [机制](mechanism/README.md)
   * [主题机制](mechanism/theme/README.md)
+    * [Ex_ThemeDrawControl](function/draw/theme/Ex_ThemeDrawControl.md)
+    * [Ex_ThemeDrawControlEx](function/draw/theme/Ex_ThemeDrawControlEx.md)
+    * [Ex_ThemeFree](function/draw/theme/Ex_ThemeFree.md)
+    * [Ex_ThemeGetColor](function/draw/theme/Ex_ThemeGetColor.md)
+    * [Ex_ThemeGetValuePtr](function/draw/theme/Ex_ThemeGetValuePtr.md)
+    * [Ex_ThemeLoadFromFile](function/draw/theme/Ex_ThemeLoadFromFile.md)
+    * [Ex_ThemeLoadFromMemory](function/draw/theme/Ex_ThemeLoadFromMemory.md)
+
   * [布局机制](mechanism/layout/README/.md)
     * [_layout_absolute_lock](function/draw/layout/_layout_absolute_lock.md)
     * [_layout_absolute_setedge](function/draw/layout/_layout_absolute_setedge.md)
