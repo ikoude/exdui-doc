@@ -40,7 +40,12 @@
     * [_layout_unregister](function/draw/layout/_layout_unregister.md)
     * [_layout_update](function/draw/layout/_layout_update.md)
   * [资源包机制](mechanism/res/README.md)
-  
+    * [Ex_ResFree](function/draw/res/Ex_ResFree.md)
+    * [Ex_ResGetFile](function/draw/res/Ex_ResGetFile.md)
+    * [Ex_ResGetFileFromAtom](function/draw/res/Ex_ResGetFileFromAtom.md)
+    * [Ex_ResLoadFromFile](function/draw/res/Ex_ResLoadFromFile.md)
+    * [Ex_ResLoadFromMemory](function/draw/res/Ex_ResLoadFromMemory.md)
+
 * [函数](function/README.md)
   * [全局函数](function/globa/README.md )
     * [Ex_Atom](function/globa/Ex_Atom.md)
