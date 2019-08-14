@@ -1,15 +1,15 @@
 ---
-description: 字体_创建自名称
+description: 字体_创建自字体名称
 ---
 
-# _font_createfromfamily
+
 
 
 ## 声明
 
 |动态库命令| 返回值类型|库文件名|参数量| 备注|
 |:--:|:--:|:--:|:--:|:--:|
-| _font_createfromfamily |  整数型 |  libexdui.dll | 3 | 字体_创建自字体族，成功返回真(1)，失败返回假(0) |
+| _font_createfromfamily |  整数型 |  libexdui.dll | 3 | 字体_创建自字体名称，成功返回真(1)，失败返回假(0) |
 
 ## 参数列表
 
