@@ -200,6 +200,12 @@
        * [_path_hittest](function/draw/path/_path_hittest.md)
        * [_path_open](function/draw/path/_path_open.md)
        * [_path_reset](function/draw/path/_path_reset.md)
+    * [区域](function/draw/rgn/README.md)
+       * [_rgn_combine](function/draw/rgn/_rgn_combine.md)
+       * [_rgn_createfromrect](function/draw/rgn/_rgn_createfromrect.md)
+       * [_rgn_createfromroundrect](function/draw/rgn/_rgn_createfromroundrect.md)
+       * [_rgn_destroy](function/draw/rgn/_rgn_destroy.md)
+       * [_rgn_hittest](function/draw/rgn/_rgn_hittest.md)
 
     * [字体](function/draw/font/README.md)
        * [_font_copy](function/draw/font/_font_copy.md)
