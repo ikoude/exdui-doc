@@ -31,7 +31,6 @@
     * [_layout_table_setinfo](function/draw/layout/_layout_table_setinfo.md)
     * [_layout_unregister](function/draw/layout/_layout_unregister.md)
     * [_layout_update](function/draw/layout/_layout_update.md)
-
   * [资源包机制](mechanism/res/README.md)
   
 * [函数](function/README.md)
