@@ -1,6 +1,7 @@
 ---
-description: 字体_创建自字体族
+description: 字体_创建自名称
 ---
+
 # _font_createfromfamily
 
 
@@ -14,7 +15,7 @@ description: 字体_创建自字体族
 
 | 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
 | :----: | :----: | :--: | :--: | :--------: | :------: |
-| lpwzFontFace  | 整数型 |  -   |  -   |     -      | - |
+| lpwzFontFace  | 整数型 |  -   |  -   |     -      | 字体名称 |
 | dwFontSize  | 整数型 |  -   |  -   |     -      | 字体大小 |
 | dwFontStyle  | 整数型 |  -   |  -   |     -      | 字体风格 |
 
