@@ -1,14 +1,17 @@
 # Table of contents
 
 * [Introduction](README.md)
+
 * [前言](preface/README.md)
   * [介紹](preface/introduction.md)
   * [贡献](preface/contributing.md)
   * [FAQ](preface/faq.md)
+  
 * [机制](mechanism/README.md)
   * [主题机制](mechanism/theme/README.md)
   * [布局机制](mechanism/layout/README/.md)
   * [资源包机制](mechanism/res/README.md)
+  
 * [函数](function/README.md)
   * [全局函数](function/globa/README.md )
     * [Ex_Atom](function/globa/Ex_Atom.md)
@@ -22,6 +25,10 @@
     * [Ex_UnInit](function/globa/Ex_UnInit.md)
     * [Ex_XmlRegisterCallback](function/globa/Ex_XmlRegisterCallback.md)
   * [窗口函数](function/window/README.md)
+    * [Ex_WndCenterFrom](function/component/Ex_WndCenterFrom.md)
+    * [Ex_WndCreate](function/component/Ex_WndCreate.md)
+    * [Ex_WndMsgLoop](function/component/Ex_WndMsgLoop.md)
+    * [Ex_WndRegisterClass](function/component/Ex_WndRegisterClass.md)
   * [控件函数](function/component/README.md)
     * [Ex_ObjBeginPaint](function/component/Ex_ObjBeginPaint.md)
     * [Ex_ObjCallProc](function/component/Ex_ObjCallProc.md)
@@ -112,10 +119,9 @@
     * [Ex_ObjSetUIState](function/component/Ex_ObjSetUIState.md)
     * [Ex_ObjShow](function/component/Ex_ObjShow.md)
     * [Ex_ObjTooltipsPop](function/component/Ex_ObjTooltipsPop.md)
-    * [Ex_ObjTooltipsPopEx](function/component/Ex_ObjTooltipsPopEx.md)
+  * [Ex_ObjTooltipsPopEx](function/component/Ex_ObjTooltipsPopEx.md)
     * [Ex_ObjTooltipsSetText](function/component/Ex_ObjTooltipsSetText.md)
     * [Ex_ObjUpdate](function/component/Ex_ObjUpdate.md)
-
   * [绘图函数](function/draw/README.md)
   * [辅助函数](function/helper/README.md)
 * [控件](component/README.md)
@@ -130,5 +136,7 @@
     * [消息框](default/comboBox.md)
   * [扩展控件](extension/README.md)
     * [无](./)
+  
 * [常量](const/README.md)
+  
   * [暂无常量](const/constlist.md)
