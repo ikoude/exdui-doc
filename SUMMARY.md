@@ -49,7 +49,7 @@
 * [函数](function/README.md)
   * [全局函数](function/globa/README.md )
     * [Ex_Atom](function/globa/Ex_Atom.md)
-    * [Ex_GetLastErro](function/globa/Ex_GetLastErro.md)
+    * [Ex_GetLastError](function/globa/Ex_GetLastError.md)
     * [Ex_Init](function/globa/Ex_Init.md)
     * [Ex_IsDxRender](function/globa/Ex_IsDxRender.md)
     * [Ex_Scale](function/globa/Ex_Scale.md)
