@@ -14,7 +14,7 @@ description: 图像_旋转翻转
 | 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |                             备注                             |
 | :----: | :----: | :--: | :--: | :--------: | :----------------------------------------------------------: |
 |  hImg  | 整数型 |  -   |  -   |     -      |                           图像指针                           |
-| rfType | 整数型 |  -   |  -   |     -      | [参考](https://msdn.microsoft.com/en-us/library/windows/desktop/ms534171(v=vs.85).aspx) |
+| rfType | 整数型 |  -   |  -   |     -      | [旋转翻转类型](https://msdn.microsoft.com/en-us/library/windows/desktop/ms534171(v=vs.85).aspx) |
 
 
 # 示例
