@@ -55,7 +55,6 @@
     * [Ex_Scale](function/globa/Ex_Scale.md)
     * [Ex_SetLastError](function/globa/Ex_SetLastError.md)
     * [Ex_Sleep](function/globa/Ex_Sleep.md)
-    * [Ex_TrackPopupMenu](function/globa/Ex_TrackPopupMenu.md)
     * [Ex_UnInit](function/globa/Ex_UnInit.md)
     * [Ex_XmlRegisterCallback](function/globa/Ex_XmlRegisterCallback.md)
   * [窗口函数](function/window/README.md)
@@ -63,7 +62,7 @@
     * [Ex_WndCreate](function/window/Ex_WndCreate.md)
     * [Ex_WndMsgLoop](function/window/Ex_WndMsgLoop.md)
     * [Ex_WndRegisterClass](function/window/Ex_WndRegisterClass.md)
-
+    * [Ex_TrackPopupMenu](function/globa/Ex_TrackPopupMenu.md)
   * [控件函数](function/component/README.md)
     * [Ex_ObjBeginPaint](function/component/Ex_ObjBeginPaint.md)
     * [Ex_ObjCallProc](function/component/Ex_ObjCallProc.md)
