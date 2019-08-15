@@ -64,7 +64,7 @@
     * [Ex_WndMsgLoop](function/window/Ex_WndMsgLoop.md)
     * [Ex_WndRegisterClass](function/window/Ex_WndRegisterClass.md)
 
-  * [控件函数](function/component/)
+  * [控件函数](function/component/README.md)
     * [Ex_ObjBeginPaint](function/component/Ex_ObjBeginPaint.md)
     * [Ex_ObjCallProc](function/component/Ex_ObjCallProc.md)
     * [Ex_ObjClientToScreen](function/component/Ex_ObjClientToScreen.md)
