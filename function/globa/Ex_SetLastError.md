@@ -14,6 +14,6 @@
 ## 参数列表(Ex_SetLastError)
 
 |参数名|类型|参考|可空（NULL）|备注|索引|
-|----|----|----|----|----|
-|nError   |   整数型   |   -   |   ×   |    引擎发生的最后一次错误的错误代码，取值范围详见 Ex_GetLastError 索引  |[Ex_GetLastError](http://doc.exdui.org/read/main/ex/ex_getlasterror) |
+|:--:|:--:|----|:--:|:--:|:--:|
+|nError   |   整数型   |   -   |   ×   |    引擎发生的最后一次错误的错误代码，取值范围详见 Ex_GetLastError 索引  |[Ex_GetLastError](function/globa/ex_getlasterror.md) |
 
