@@ -62,7 +62,7 @@
     * [Ex_WndCreate](function/window/Ex_WndCreate.md)
     * [Ex_WndMsgLoop](function/window/Ex_WndMsgLoop.md)
     * [Ex_WndRegisterClass](function/window/Ex_WndRegisterClass.md)
-    * [Ex_TrackPopupMenu](function/globa/Ex_TrackPopupMenu.md)
+    * [Ex_TrackPopupMenu](function/window/Ex_TrackPopupMenu.md)
   * [控件函数](function/component/README.md)
     * [Ex_ObjBeginPaint](function/component/Ex_ObjBeginPaint.md)
     * [Ex_ObjCallProc](function/component/Ex_ObjCallProc.md)
