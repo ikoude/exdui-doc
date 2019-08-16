@@ -25,8 +25,8 @@ ExDirectUI（Exdui）引擎是一款采用DirectUI概念，基于GDI/Direct2D绘
   * [布局机制](mechanism/layout/README.md) 0%
   * [资源包机制](mechanism/res/README.md) 0%
 * [函数](function/README.md)
-  * [全局函数](function/globa/README.md) 0%
-  * [窗口函数](function/window/README.md) 0%
+  * [全局函数](function/globa/README.md) 100%
+  * [窗口函数](function/window/README.md) 99%
   * [控件函数](function/component/README.md) 0%
   * [绘图函数](function/draw/README.md) 0%
   * [辅助函数](function/helper/README.md) 0%
