@@ -1,6 +1,6 @@
-Title: _layout_absolute_lock
-
-Date: 2019年8月4日11时52分23秒
+---
+description: 布局_绝对布局_锁定
+---
 
 ### Syntax / 函数原型
 
@@ -18,7 +18,7 @@ _layout_absolute_lock (
 );
 ```
 
-### 易语言声明
+##### 易语言声明
 
 ```Elang
 .DLL命令 _layout_absolute_lock, 逻辑型, "libexdui.dll", "_layout_absolute_lock", 公开, 按当前位置锁定
@@ -40,9 +40,13 @@ _layout_absolute_lock (
 
 Type: **HANDLE**
 
+布局句柄
+
 `hObjChild`
 
 Type: **HANDLE**
+
+子组件句柄
 
 `tLeft`
 
@@ -52,28 +56,34 @@ Type: **INT32**
 
 Type: **INT32**
 
-请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP.md)
+请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP_ABSOLUTE.md)
 
 `tRight`
 
 Type: **INT32**
 
-请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP.md)
+请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP_ABSOLUTE.md)
 
 `tBottom`
 
 Type: **INT32**
 
-请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP.md)
+请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP_ABSOLUTE.md)
 
 `tWidth`
 
 Type: **INT32**
 
-请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP.md)
+请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP_ABSOLUTE.md)
 
 `tHeight`
 
 Type: **INT32**
 
-请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP.md)
+请参阅 [ELCP_ABSOLUTE_XXX_TYPE](../../const/ELCP_ABSOLUTE.md)
+
+---
+
+### Return Value / 返回值
+
+Type: bool
