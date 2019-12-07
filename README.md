@@ -6,7 +6,8 @@ description: ExDirectUI 4.1 Manual
 
 ## ExDirectUI
 
-ExDirectUI(Exdui) 引擎是一款采用DirectUI概念, 基于GDI/Direct2D绘图引擎的轻量级用户界面引擎; 它相对其他轻量级UI引擎具有 `高效`、`安全`、`绚丽`、`扩展性强`、`跨语言` 等特点。
+一款基于GDI/Direct2D绘图引擎的轻量级用户界面引擎; 
+它相对其他轻量级UI引擎具有 `高效` `安全` `绚丽` `扩展性强` `跨语言` 等特点。
 
 [开始阅读](https://docs.exdui.org)
 
