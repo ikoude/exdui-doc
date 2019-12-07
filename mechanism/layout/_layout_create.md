@@ -1,30 +1,47 @@
-Title: _layout_create
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_创建
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_create |  整数型 |  libexdui.dll | 2 |  hLayout | 
+```C++
+int __stdcall 
+_layout_create (
+    int nType,
+    int hObjBind
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-nType |  整数型 | - | - |  -|  #ELT_ 布局类型
-hObjBind |  整数型 | - | - |  -|  所绑定的HOBJ或HEXDUI
+.DLL命令 _layout_create, 整数型, "libexdui.dll", "_layout_create", 公开, hLayout
+    .参数 nType, 整数型,  ,
+    .参数 hObjBind, 整数型,  ,
 ```
 
+---
 
+### Parameters / 参数
 
+`nType`
 
-### 示例
-#### 易语言
-```c
+Type: **INT32**
 
-```
+创建的布局类型, 参见  [ELT](../../const/ELT.md)
+
+`hObjBind`
+
+Type: **HANDLE**
+
+布局绑定的组件句柄
+
+---
+
+### Return Value / 返回值
+
+Type: HANDLE
+
+布局句柄

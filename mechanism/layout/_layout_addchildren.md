@@ -1,31 +1,61 @@
-Title: _layout_addchildren
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_添加组件集
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_addchildren |  逻辑型 |  libexdui.dll | 4 |  已被加入的不会重复添加(系统按钮不加入) | 
+```C++
+bool __stdcall 
+_layout_addchildren (
+    int hLayout,
+    bool fDesc,
+    int dwObjClassATOM,
+    int nCount
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hLayout |  整数型 | - | - |  -| 
-fDesc |  逻辑型 | - | - |  -|  是否倒序
-dwObjClassATOM |  整数型 | - | - |  -|  0或空为所有
-nCount |  整数型 | ★ | - |  -|  加入的个数
+.DLL命令 _layout_addchildren, 逻辑型, "libexdui.dll", "_layout_addchildren", 公开,
+    .参数 hLayout, 整数型,  ,
+    .参数 fDesc, 逻辑型,  ,
+    .参数 dwObjClassATOM, 整数型,  ,
+    .参数 nCount, 整数型, 传址 ,
 ```
 
+---
 
+### Parameters / 参数
 
+`hLayout`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+布局句柄
+
+`fDesc`
+
+Type: **BOOL**
+
+是否为倒序
+
+`dwObjClassATOM`
+
+Type: **INT32**
+
+0或空为所有
+
+`nCount`
+
+Type: **INT32**
+
+加入的数量
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL

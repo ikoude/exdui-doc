@@ -21,6 +21,8 @@ _layout_absolute_lock (
 ##### 易语言声明
 
 ```Elang
+.版本 2
+
 .DLL命令 _layout_absolute_lock, 逻辑型, "libexdui.dll", "_layout_absolute_lock", 公开, 按当前位置锁定
     .参数 hLayout, 整数型,  , 
     .参数 hObjChild, 整数型,  , 
@@ -86,4 +88,4 @@ Type: **INT32**
 
 ### Return Value / 返回值
 
-Type: bool
+Type: BOOL

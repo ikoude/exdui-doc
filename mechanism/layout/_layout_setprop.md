@@ -1,31 +1,53 @@
-Title: _layout_setprop
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_置属性
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_setprop |  逻辑型 |  libexdui.dll | 3 |  | 
+```C++
+bool __stdcall 
+_layout_getprop (
+    int hLayout,
+    int dwPropID,
+    int pvValue
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hLayout |  整数型 | - | - |  -| 
-dwPropID |  整数型 | - | - |  -| 
-pvValue |  整数型 | - | - |  -| 
+.DLL命令 _layout_setprop, 逻辑型, "libexdui.dll", "_layout_setprop", 公开, 
+    .参数 hLayout, 整数型,  , 
+    .参数 dwPropID, 整数型,  , 
+    .参数 pvValue, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hLayout`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+布局句柄
+
+`dwPropID`
+
+Type: **INT32**
+
+属性ID
+
+`pvValue`
+
+Type: **INT32**
+
+传入的属性值
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
