@@ -1,29 +1,45 @@
-Title: _layout_addchild
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_添加组件
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_addchild |  逻辑型 |  libexdui.dll | 2 |  | 
+```C++
+bool __stdcall 
+_layout_addchild (
+    int hLayout,
+    int hObj
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hLayout |  整数型 | - | - |  -| 
-hObj |  整数型 | - | - |  -| 
+.DLL命令 _layout_addchild, 逻辑型, "libexdui.dll", "_layout_addchild", 公开, 
+    .参数 hLayout, 整数型,  , 
+    .参数 hObj, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hLayout`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+布局句柄
+
+`hObj`
+
+Type: **HANDLE**
+
+组件句柄
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL

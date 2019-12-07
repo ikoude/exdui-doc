@@ -1,12 +1,12 @@
 ---
-description: ExDirectUI 4.1 Compiled Help Manual
+description: ExDirectUI 4.1 Manual
 ---
 
 # Introduction
 
 ## ExDirectUI
 
-ExDirectUI（Exdui）引擎是一款采用DirectUI概念，基于GDI/Direct2D绘图引擎的轻量级用户界面引擎；它相对其他轻量级UI引擎具有高效、安全、绚丽、扩展性强、可跨语言等特点。
+ExDirectUI(Exdui) 引擎是一款采用DirectUI概念, 基于GDI/Direct2D绘图引擎的轻量级用户界面引擎; 它相对其他轻量级UI引擎具有 `高效`、`安全`、`绚丽`、`扩展性强`、`跨语言` 等特点。
 
 [开始阅读](https://docs.exdui.org)
 
@@ -22,7 +22,7 @@ ExDirectUI（Exdui）引擎是一款采用DirectUI概念，基于GDI/Direct2D绘
   * [FAQ](preface/faq.md) 0% 
 * [机制](mechanism/README.md)
   * [主题机制](mechanism/theme/) 0%
-  * [布局机制](mechanism/layout/) 0%
+  * [布局机制](mechanism/layout/) 100%
   * [资源包机制](mechanism/res/) 0%
 * [函数](function/README.md)
   * [全局函数](function/globa/) 99%
@@ -39,4 +39,4 @@ ExDirectUI（Exdui）引擎是一款采用DirectUI概念，基于GDI/Direct2D绘
   * [辅助函数](function/helper/) 0%
 * [常量](const/README.md)
 
-> 本文档最后由 [@IKOUDE](https://github.com/ikoude) 维护于 2019年 8 月 16 日。
+> 本文档持续更新中, 欢迎PR

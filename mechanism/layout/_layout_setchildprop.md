@@ -1,32 +1,61 @@
-Title: _layout_setchildprop
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_置组件属性
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_setchildprop |  逻辑型 |  libexdui.dll | 4 |  | 
+```C++
+bool __stdcall 
+_layout_setchildprop (
+    int hLayout,
+    int hObj,
+    int dwPropID,
+    int pvValue
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hLayout |  整数型 | - | - |  -| 
-hObj |  整数型 | - | - |  -| 
-dwPropID |  整数型 | - | - |  -| 
-pvValue |  整数型 | - | - |  -| 
+.DLL命令 _layout_setchildprop, 逻辑型, "libexdui.dll", "_layout_setchildprop", 公开, 
+    .参数 hLayout, 整数型,  , 
+    .参数 hObj, 整数型,  , 
+    .参数 dwPropID, 整数型,  , 
+    .参数 pvValue, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hLayout`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+布局句柄
+
+`hObj`
+
+Type: **HANDLE**
+
+组件句柄
+
+`dwPropID`
+
+Type: **INT32**
+
+属性ID
+
+`pvValue`
+
+Type: **INT32**
+
+传入的属性值
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL

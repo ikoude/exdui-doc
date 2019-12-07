@@ -1,33 +1,69 @@
-Title: _layout_table_setinfo
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_置表格信息
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_table_setinfo |  逻辑型 |  libexdui.dll | 5 |  | 
+```C++
+bool __stdcall 
+_layout_table_setinfo (
+    int hLayout,
+    int aRowHeight,
+    int cRows,
+    int aCellWidth,
+    int cCells
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hLayout |  整数型 | - | - |  -| 
-aRowHeight |  整数型 | - | - |  -| 
-cRows |  整数型 | - | - |  -| 
-aCellWidth |  整数型 | - | - |  -| 
-cCells |  整数型 | - | - |  -| 
+.DLL命令 _layout_table_setinfo, 逻辑型, "libexdui.dll", "_layout_table_setinfo", 公开, 
+    .参数 hLayout, 整数型,  , 
+    .参数 aRowHeight, 整数型,  , 
+    .参数 cRows, 整数型,  , 
+    .参数 aCellWidth, 整数型,  , 
+    .参数 cCells, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hLayout`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+布局句柄
+
+`aRowHeight`
+
+Type: **INT32**
+
+行高度
+
+`cRows`
+
+Type: **INT32**
+
+行数量
+
+`aCellWidth`
+
+Type: **INT32**
+
+格宽度
+
+`cCells`
+
+Type: **INT32**
+
+格数量
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL

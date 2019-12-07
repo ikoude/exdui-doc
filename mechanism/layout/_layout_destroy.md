@@ -1,12 +1,12 @@
 ---
-description: 布局_取类型
+description: 布局_销毁
 ---
 
 ### Syntax / 函数原型
 
 ```C++
-int __stdcall 
-_layout_gettype (
+bool __stdcall 
+_layout_destroy (
     int hLayout
 );
 ```
@@ -16,7 +16,7 @@ _layout_gettype (
 ```Elang
 .版本 2
 
-.DLL命令 _layout_gettype, 整数型, "libexdui.dll", "_layout_gettype", 公开,
+.DLL命令 _layout_destroy, 逻辑型, "libexdui.dll", "_layout_destroy", 公开, 
     .参数 hLayout, 整数型,  , 
 ```
 
@@ -34,4 +34,4 @@ Type: **HANDLE**
 
 ### Return Value / 返回值
 
-Type: INT32
+Type: BOOL

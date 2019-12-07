@@ -1,30 +1,45 @@
-Title: _layout_register
-Date: 2019年8月4日11时52分22秒
+---
+description: 布局_注册
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _layout_register |  逻辑型 |  libexdui.dll | 2 |  | 
+```C++
+bool __stdcall 
+_layout_register (
+    int nType,
+    int lpfnLayoutProc
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-nType |  整数型 | - | - |  -|  布局类型
-lpfnLayoutProc |  整数型 | - | - |  -|  布局管理器回调函数(lpLayout[有可能是NULL]
+.DLL命令 _layout_register, 逻辑型, "libexdui.dll", "_layout_register", 公开, 
+    .参数 nType, 整数型,  ,
+    .参数 lpfnLayoutProc, 整数型,  ,
 ```
 
+---
 
+### Parameters / 参数
 
+`nType`
 
-### 示例
-#### 易语言
-```c
+Type: **INT32**
 
-```
+布局类型
+
+`lpfnLayoutProc`
+
+Type: **CALLBACK**
+
+布局管理器回调指针
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
