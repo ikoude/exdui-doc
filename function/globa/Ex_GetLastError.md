@@ -1,25 +1,28 @@
 ---
-description: 设置引擎错误
+description: 取最后错误
 ---
 
-> 获取ExDirectUI引擎产生的最后一个错误代码
+### Syntax / 函数原型
 
+```C++
+int __stdcall 
+Ex_GetLastError (void);
+```
 
+##### 易语言声明
 
-## 声明
+```Elang
+.版本 2
 
-|动态库命令|返回值类型|库文件名|参数量|备注|
-|----|:--:|----|----|----|
-|Ex_GetLastError|整数型|libexdui.dll|0|获取引擎错误,相关常量 :#ERROR_EX_|
+.DLL命令 Ex_GetLastError, 整数型, "libexdui.dll", "Ex_GetLastError", 公开,
+```
 
+---
 
+### Return Value / 返回值
 
-## 常量列表(Ex_GetLastError)
+Type: INT32
 
-|常量名|常量值(十六进制)|常量值(十进制)|备注 |
-|----|:--:|:--:|:--:|
-|ERROR_EX_NOERROR|0|0|未发生错误|
-|ERROR_EX_|-|-|-|
-|ERROR_EX_|-|-|-|
-|ERROR_EX_|-|-|-|
-|未完善|-|-|-|
+获取最后错误代码
+
+~~错误代码列表 参见 [ERROR_EX_]("#")~~
