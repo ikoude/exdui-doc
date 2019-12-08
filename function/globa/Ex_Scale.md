@@ -2,22 +2,38 @@
 description: 缩放
 ---
 
-> 暂无说明
+### Syntax / 函数原型
 
+```C++
+float __stdcall 
+Ex_Scale (
+    float n
+);
+```
 
+##### 易语言声明
 
-## 声明
+```Elang
+.版本 2
 
-|动态库命令   |   返回值类型   |   库文件名   |   参数量   | 备注 |
-|:--:|:--:|:--:|:--:|:--:|
-|Ex_Scale   |   小数型   |   libexdui.dll   |   1   |   缩放|
+.DLL命令 Ex_Scale, 小数型, "libexdui.dll", "Ex_Scale", 公开, 
+    .参数 n, 小数型,  , 
+```
 
+---
 
+### Parameters / 参数
 
-## 参数列表(Ex_Scale)
+`n`
 
-| 参数名 |  类型  | 参考 | 可空（NULL） | 备注 |
-| :----: | :----: | :--: | :----------: | ---- |
-|   n    | 小数型 |  -   |      ×       | -    |
+Type: **float**
 
+缩放倍率
 
+---
+
+### Return Value / 返回值
+
+Type: float
+
+缩放
