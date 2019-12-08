@@ -1,32 +1,26 @@
 ---
-description: 是否为D2D渲染
+description: 是否使用D2D渲染
 ---
 
-> 返回引擎当前是否使用D2D作为绘图引擎
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令   |   返回值类型   |   库文件名   |   参数量   | 备注 |
-|:--:|:--:|:--:|:--:|----|
-|Ex_IsDxRender   |   逻辑型   |   libexdui.dll   |   0   |   是否为D2D渲染|
-
-
-
-## 使用示例
-
-### 易语言
-- 如果(Ex_IsDxRender())
-    - 输出调试文本("使用D2D渲染")
-- 否则
-    - 输出调试文本("未使用D2D渲染")
-- 如果结束
-
-### C++
-
-```c++
-
+```C++
+bool __stdcall 
+Ex_IsDxRender (void);
 ```
 
+##### 易语言声明
 
+```Elang
+.版本 2
+
+.DLL命令 Ex_IsDxRender, 逻辑型, "libexdui.dll", "Ex_IsDxRender", 公开,
+```
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+是否使用D2D渲染
