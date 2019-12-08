@@ -1,4 +1,3 @@
-### ELT
 ##### ExDirectUI Layout
 
 ---
