@@ -1,22 +1,47 @@
 ---
-description: 注册键值回调(XML)
+description: 注册XML键值回调
 ---
 
->  注册XML回调
+### Syntax / 函数原型
 
-## 声明
+```C++
+void __stdcall 
+Ex_XmlRegisterCallback (
+    int atomValue,
+    int pfnCallback
+);
+```
 
-|动态库命令   |   返回值类型   |   库文件名(-)   |   参数量   | 备注 |
-|:--:|:--:|----|:--:|:--:|
-|Ex_XmlRegisterCallback   |   -   |   libexdui.dll   |   2   |   注册XML回调|
+##### 易语言声明
 
+```Elang
+.版本 2
 
+.DLL命令 Ex_XmlRegisterCallback, , "libexdui.dll", "Ex_XmlRegisterCallback", 公开, 
+    .参数 atomValue, 整数型,  , 
+    .参数 pfnCallback, 子程序指针,  , 
+```
 
-## 参数列表(Ex_XmlRegisterCallback)
+---
 
-| 参数名      |    类型    | 参考 | 可空（NULL） | 备注                                       |
-| ----------- | :--------: | :--: | :----------: | ------------------------------------------ |
-| atomValue   |   整数型   |  -   |      ×       | 原子值                                     |
-| pfnCallback | 子程序指针 |  -   |      ×       | 回调指针，模块为子程序指针，动态库为整数型 |
+### Parameters / 参数
 
+`atomValue`
 
+Type: **INT32**
+
+原子值
+
+`pfnCallback`
+
+Type: **INT32**
+
+回调函数
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+注册XML键值回调
