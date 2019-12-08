@@ -2,15 +2,23 @@
 description: 反初始化引擎
 ---
 
-> 反初始化ExDirectUI引擎，释放内部使用的各类资源。
+### Syntax / 函数原型
 
-## 声明
+```C++
+void __stdcall 
+Ex_UnInit (void);
+```
 
-|动态库命令   |   返回值类型   |   库文件名   |   参数量   | 备注 |
-|----|:--:|:--:|:--:|:--:|
-|Ex_UnInit   |   -   |   libexdui.dll   |   0   |   反初始化引擎|
+##### 易语言声明
 
+```Elang
+.版本 2
 
-## 使用示例
+.DLL命令 Ex_UnInit, , "libexdui.dll", "Ex_UnInit", 公开, 
+```
 
-> 详见每一个例程
+---
+
+### Return Value / 返回值
+
+反初始化引擎
