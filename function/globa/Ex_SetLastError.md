@@ -1,22 +1,39 @@
 ---
-description: 设置引擎错误
+description: 置最后错误
 ---
 
-> 设置ExDirectUI引擎的最后一次错误代码
+### Syntax / 函数原型
 
+```C++
+void __stdcall 
+Ex_SetLastError (
+    int nError
+);
+```
 
+##### 易语言声明
 
-## 声明
+```Elang
+.版本 2
 
-|动态库命令   |   返回值类型   |   库文件名   |   参数量   |   备注  |
-|:--:|:--:|:--:|:--:|----|
-|Ex_SetLastError   |   整数型   |   libexdui.dll   |   1   | 设置引擎错误|
+.DLL命令 Ex_SetLastError, , "libexdui.dll", "Ex_SetLastError", 公开,
+    .参数 nError, 整数型,  , 
+```
 
+---
 
+### Parameters / 参数
 
-## 参数列表(Ex_SetLastError)
+`nError`
 
-|参数名|类型|参考|可空（NULL）|备注|索引|
-|:--:|:--:|----|:--:|:--:|:--:|
-|nError   |   整数型   |   -   |   ×   |    引擎发生的最后一次错误的错误代码，取值范围详见 Ex_GetLastError 索引  |[Ex_GetLastError](function/globa/ex_getlasterror.md) |
+Type: **INT32**
 
+错误代码 参见 [ERROR_EX_]("#")
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+设置最后错误代码
