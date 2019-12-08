@@ -10,7 +10,7 @@ Ex_Init (
     HINSTANCE hInstance,
     DWORD     dwGlobalFlags,
     HCURSOR   hDefaultCursor,
-    LPCSTR    lpszDefaultClassName,
+    LPCTSTR   lpszDefaultClassName,
     LPVOID    lpDefaultTheme,
     DWORD     dwDefaultThemeLen,
     LPVOID    lpDefaultI18N,
@@ -58,13 +58,13 @@ Type: **HCURSOR**
 
 `lpszDefaultClassName`
 
-Type: **LPCSTR**
+Type: **LPCTSTR**
 
 默认窗口类名 可为NULL
 
 `lpDefaultTheme`
 
-Type: **LPCSTR**
+Type: **LPVOID**
 
 默认主题包指针
 
@@ -76,7 +76,7 @@ Type: **DWORD**
 
 `lpDefaultI18N`
 
-Type: **LPCSTR**
+Type: **LPVOID**
 
 默认语言包指针 
 

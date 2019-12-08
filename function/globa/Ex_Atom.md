@@ -7,7 +7,7 @@ description: 字符串取原子号
 ```C++
 int __stdcall 
 Ex_Atom (
-    char *lptstring
+    LPCTSTR lptstring
 );
 ```
 
@@ -26,7 +26,7 @@ Ex_Atom (
 
 `lptstring`
 
-Type: **char***
+Type: **LPCTSTR**
 
 传入的字符串
 
