@@ -51,7 +51,7 @@ Type: **HMENU**
 
 Type: **INT32**
 
-标识 参见 [TPM](../../const/TPM.md)
+标识 参见 ~~TPM~~
 
 `x`
 
