@@ -1,17 +1,24 @@
-Title: Ex_WndMsgLoop
-Date: 2019年8月4日11时52分21秒
+---
+description: Ex窗口消息循环
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_WndMsgLoop |  整数型 |  libexdui.dll | 0 |  窗口消息循环 | 
+```C++
+int __stdcall 
+Ex_WndMsgLoop (void);
 ```
 
-### 示例
-#### 易语言
-```c
+##### 易语言声明
 
+```Elang
+.版本 2
+
+.DLL命令 Ex_WndMsgLoop, 整数型, "libexdui.dll", "Ex_WndMsgLoop", 公开, 
 ```
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
