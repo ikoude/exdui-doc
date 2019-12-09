@@ -7,7 +7,7 @@ description: Ex弹出菜单
 ```C++
 bool __stdcall 
 Ex_TrackPopupMenu (
-    int hMenu,
+    HMENU hMenu,
     int uFlags,
     int x,
     int y,
