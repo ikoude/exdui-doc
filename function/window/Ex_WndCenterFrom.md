@@ -1,30 +1,53 @@
-Title: Ex_WndCenterFrom
-Date: 2019年8月4日11时52分21秒
+---
+description: Ex窗口居中
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_WndCenterFrom |   |  libexdui.dll | 3 |  窗口居中 | 
+```C++
+void __stdcall 
+Ex_WndCenterFrom (
+    int hWnd,
+    int hWndFrom,
+    bool bFullScreen
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hWnd |  整数型 | - | - |  -|  预居中的原始窗口
-hWndFrom |  整数型 | - | - |  -|  预居中的目标窗口
-bFullScreen |  逻辑型 | - | - |  -|  是否全屏模式
+.DLL命令 Ex_WndCenterFrom, , "libexdui.dll", "Ex_WndCenterFrom", 公开, 
+    .参数 hWnd, 整数型,  , 
+    .参数 hWndFrom, 整数型,  , 
+    .参数 bFullScreen, 逻辑型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hWnd`
 
-### 示例
-#### 易语言
-```c
+Type: **HWND**
 
-```
+欲居中的原始窗口
+
+`hWndFrom`
+
+Type: **HWND**
+
+欲居中的目标窗口 如果为 NULL 则为屏幕居中
+
+`bFullScreen`
+
+Type: **BOOL**
+
+是否全屏模式
+
+---
+
+### Return Value / 返回值
+
+窗口居中
