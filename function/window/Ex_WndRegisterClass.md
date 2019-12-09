@@ -1,31 +1,61 @@
-Title: Ex_WndRegisterClass
-Date: 2019年8月4日11时52分21秒
+---
+description: Ex注册窗口类
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_WndRegisterClass |  整数型 |  libexdui.dll | 4 |  注册窗口类 | 
+```C++
+int __stdcall 
+Ex_WndRegisterClass (
+    LPCWSTR lpwzClassName,
+    HICON   hIcon,
+    HICON   hIconsm,
+    HCURSOR hCursor
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-lpwzClassName |  整数型 | - | - |  -| 窗口类名
-hIcon |  整数型 | - | - |  -| 图标句柄
-hIconsm |  整数型 | - | - |  -| 
-hCursor |  整数型 | - | - |  -| 鼠标指针
+.DLL命令 Ex_WndRegisterClass, 整数型, "libexdui.dll", "Ex_WndRegisterClass", 公开, 
+    .参数 lpwzClassName, 整数型,  , 
+    .参数 hIcon, 整数型,  , 
+    .参数 hIconsm, 整数型,  , 
+    .参数 hCursor, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`lpwzClassName`
 
-### 示例
-#### 易语言
-```c
+Type: **LPCWSTR**
 
-```
+欲注册的窗口类名
+
+`hIcon`
+
+Type: **HICON**
+
+图标句柄 正常大小
+
+`hIconsm`
+
+Type: **HICON**
+
+图标句柄 小图标
+
+`hCursor`
+
+Type: **HCURSOR**
+
+指针句柄 鼠标指针
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
