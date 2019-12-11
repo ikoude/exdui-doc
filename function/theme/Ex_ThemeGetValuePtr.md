@@ -1,30 +1,55 @@
-Title: Ex_ThemeGetValuePtr
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex取主题属性值指针
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ThemeGetValuePtr |  整数型 |  libexdui.dll | 3 |  获取组件属性值指针. | 
+```C++
+int __stdcall 
+Ex_ThemeGetValuePtr (
+    HANDLE hTheme,
+    int    atomClass,
+    int    atomProp
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hTheme |  整数型 | - | - |  -|  主题句柄
-atomClass |  整数型 | - | - |  -| 
-atomProp |  整数型 | - | - |  -| 
+.DLL命令 Ex_ThemeGetValuePtr, 整数型, "libexdui.dll", "Ex_ThemeGetValuePtr", 公开, 
+    .参数 hTheme, 整数型,  , 
+    .参数 atomClass, 整数型,  , 
+    .参数 atomProp, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hTheme`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+主题句柄
+
+`atomClass`
+
+Type: **INT32**
+
+\-
+
+`atomProp`
+
+Type: **INT32**
+
+\-
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+获取组件属性值指针
