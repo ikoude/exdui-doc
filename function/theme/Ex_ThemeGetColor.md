@@ -42,6 +42,6 @@ Type: **INT32**
 
 ### Return Value / 返回值
 
-Type: BOOL
+Type: INT32
 
 获取主题相关颜色值
