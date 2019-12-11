@@ -7,7 +7,7 @@ description: Ex取主题属性值指针
 ```C++
 int __stdcall 
 Ex_ThemeGetValuePtr (
-    HANDLE hTheme,
+    HTHEME hTheme,
     int    atomClass,
     int    atomProp
 );
@@ -30,7 +30,7 @@ Ex_ThemeGetValuePtr (
 
 `hTheme`
 
-Type: **HANDLE**
+Type: **HTHEME**
 
 主题句柄
 

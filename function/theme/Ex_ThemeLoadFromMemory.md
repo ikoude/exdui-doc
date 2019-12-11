@@ -5,7 +5,7 @@ description: Ex加载内存主题包
 ### Syntax / 函数原型
 
 ```C++
-HANDLE __stdcall 
+HTHEME __stdcall 
 Ex_ThemeLoadFromMemory (
     LPVOID lpData,
     DWORD  dwDataLen,
@@ -66,6 +66,6 @@ Type: **BOOL**
 
 ### Return Value / 返回值
 
-Type: HANDLE
+Type: HTHEME
 
 从内存加载主题包 返回主题包句柄

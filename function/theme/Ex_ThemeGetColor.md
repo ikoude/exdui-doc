@@ -5,9 +5,9 @@ description: Ex取主题颜色
 ### Syntax / 函数原型
 
 ```C++
-int __stdcall 
+EXCOLOR __stdcall 
 Ex_ThemeGetColor (
-    HANDLE hTheme,
+    HTHEME hTheme,
     int    nIndex
 );
 ```
@@ -28,7 +28,7 @@ Ex_ThemeGetColor (
 
 `hTheme`
 
-Type: **HANDLE**
+Type: **HTHEME**
 
 主题句柄
 
@@ -42,6 +42,6 @@ Type: **INT32**
 
 ### Return Value / 返回值
 
-Type: INT32
+Type: EXCOLOR
 
-获取主题相关颜色值
+读取主题包内某个颜色值

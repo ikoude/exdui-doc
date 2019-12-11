@@ -5,7 +5,7 @@ description: Ex加载主题包
 ### Syntax / 函数原型
 
 ```C++
-HANDLE __stdcall 
+HTHEME __stdcall 
 Ex_ThemeLoadFromFile (
     LPCWSTR lptszFile,
     LPVOID  lpKey,
@@ -58,6 +58,6 @@ Type: **BOOL**
 
 ### Return Value / 返回值
 
-Type: HANDLE
+Type: HTHEME
 
-加载主题包 返回主题包句柄
+返回加载的主题包句柄, 失败返回 NULL

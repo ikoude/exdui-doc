@@ -7,7 +7,7 @@ description: Ex释放主题
 ```C++
 bool __stdcall 
 Ex_ThemeFree (
-    HANDLE hTheme
+    HTHEME hTheme
 );
 ```
 
@@ -26,9 +26,9 @@ Ex_ThemeFree (
 
 `hTheme`
 
-Type: **HANDLE**
+Type: **HTHEME**
 
-主题句柄
+需要释放的主题包句柄
 
 ---
 
@@ -36,4 +36,4 @@ Type: **HANDLE**
 
 Type: BOOL
 
-释放主题
+释放一个主题包文件
