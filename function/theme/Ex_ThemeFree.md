@@ -7,7 +7,7 @@ description: Ex释放主题
 ```C++
 bool __stdcall 
 Ex_ThemeFree (
-    int hTheme
+    HANDLE hTheme
 );
 ```
 
