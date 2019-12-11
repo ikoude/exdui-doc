@@ -1,28 +1,39 @@
-Title: Ex_ThemeFree
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex释放主题
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ThemeFree |  逻辑型 |  libexdui.dll | 1 |  释放主题 | 
+```C++
+bool __stdcall 
+Ex_ThemeFree (
+    int hTheme
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hTheme |  整数型 | - | - |  -| 
+.DLL命令 Ex_ThemeFree, 逻辑型, "libexdui.dll", "Ex_ThemeFree", 公开, 
+    .参数 hTheme, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hTheme`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+主题句柄
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+释放主题
