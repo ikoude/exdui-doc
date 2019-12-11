@@ -1,32 +1,71 @@
-Title: Ex_ThemeLoadFromMemory
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex加载内存主题包
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ThemeLoadFromMemory |  整数型 |  libexdui.dll | 5 |  加载主题包 | 
+```C++
+HANDLE __stdcall 
+Ex_ThemeLoadFromMemory (
+    LPVOID lpData,
+    DWORD  dwDataLen,
+    LPVOID lpKey,
+    DWORD  dwKeyLen,
+    bool   bDefault
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-lpData |  整数型 | - | - |  -| 
-dwDataLen |  整数型 | - | - |  -| 
-lpKey |  整数型 | - | - |  -| 
-dwKeyLen |  整数型 | - | - |  -| 
-bDefault |  逻辑型 | - | - |  -| 
+.DLL命令 Ex_ThemeLoadFromMemory, 整数型, "libexdui.dll", "Ex_ThemeLoadFromMemory", 公开, 加载主题包
+    .参数 lpData, 整数型,  , 
+    .参数 dwDataLen, 整数型,  , 
+    .参数 lpKey, 整数型,  , 
+    .参数 dwKeyLen, 整数型,  , 
+    .参数 bDefault, 逻辑型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`lpData`
 
-### 示例
-#### 易语言
-```c
+Type: **LPVOID**
 
-```
+主题包缓冲区指针
+
+`dwDataLen`
+
+Type: **DWORD**
+
+主题包缓冲区长度
+
+`lpKey`
+
+Type: **LPVOID**
+
+密钥指针
+
+`dwKeyLen`
+
+Type: **DWORD**
+
+密钥长度
+
+`bDefault`
+
+Type: **BOOL**
+
+\-
+
+---
+
+### Return Value / 返回值
+
+Type: HANDLE
+
+从内存加载主题包 返回主题包句柄
