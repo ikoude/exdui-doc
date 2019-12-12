@@ -1,31 +1,47 @@
-Title: _canvas_clear
-Date: 2019年8月4日11时52分21秒
+---
+description: 画布_清除
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_clear |  逻辑型 |  libexdui.dll | 2 |  ok | 
+```C++
+bool __stdcall 
+_canvas_clear (
+    HCANVAS hCanvas,
+    int     lColor
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
-lColor |  整数型 | - | - |  -| 
+.DLL命令 _canvas_clear, 逻辑型, "libexdui.dll", "_canvas_clear", 公开,
+    .参数 hCanvas, 整数型,  , 
+    .参数 lColor, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hCanvas`
 
-### 示例
-#### 易语言
-```c
+Type: **HCANVAS**
 
-```
+画布句柄
+
+`lColor`
+
+Type: **INT32**
+
+清除颜色
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+清除画布
