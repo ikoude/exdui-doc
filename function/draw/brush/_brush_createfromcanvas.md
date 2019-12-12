@@ -1,29 +1,39 @@
 ---
-description: 画刷_创建自布局
+description: 画刷_创建自画布
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _brush_createfromcanvas |  整数型 |  libexdui.dll | 1 | 画刷_创建自布局 |
-
-## 参数列表
-
-| 参数名  |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :-----: | :----: | :--: | :--: | :--------: | :------: |
-| hCanvas | 整数型 |  -   |  -   |     -      | 布局句柄 |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+HBRUSH __stdcall 
+_brush_create (
+    HCANVAS hCanvas,
+);
 ```
 
+##### 易语言声明
 
+```Elang
+.版本 2
+
+.DLL命令 _brush_createfromcanvas, 整数型, "libexdui.dll", "_brush_createfromcanvas", 公开, 
+    .参数 hCanvas, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hCanvas`
+
+Type: **HCANVAS**
+
+画布句柄
+
+---
+
+### Return Value / 返回值
+
+Type: HBRUSH
+
+创建成功 返回画刷句柄
