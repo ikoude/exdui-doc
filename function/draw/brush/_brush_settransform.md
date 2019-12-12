@@ -1,28 +1,46 @@
 ---
-description: 画刷_设置变换
+description: 画刷_置变换
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|     动态库命令      | 返回值类型 |   库文件名   | 参数量 |                          备注                           |
-| :-----------------: | :--------: | :----------: | :----: | :-----------------------------------------------------: |
-| _brush_settransform |   整数型   | libexdui.dll |   1    | 画刷_设置变换，绘制的内容随矩阵描述进行平移、缩放或旋转 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-| hBrush | 整数型 |  -   |  -   |     -      | 画刷句柄 |
-| matrix | 整数型 |  -   |  -   |     -      |   矩阵   |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+int __stdcall 
+_brush_settransform (
+    HBRUSH hBrush,
+    INT32 matrix
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _brush_settransform, 整数型, "libexdui.dll", "_brush_settransform", 公开, 
+    .参数 hBrush, 整数型,  , 
+    .参数 matrix, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hBrush`
+
+Type: **HBRUSH**
+
+画刷句柄
+
+`argb`
+
+Type: **INT32**
+
+矩阵
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
