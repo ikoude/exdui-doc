@@ -2,26 +2,38 @@
 description: 画刷_创建自图像
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|      动态库命令      | 返回值类型 |   库文件名   | 参数量 |      备注       |
-| :------------------: | :--------: | :----------: | :----: | :-------------: |
-| _brush_createfromimg |   整数型   | libexdui.dll |   1    | 画刷_创建自图像 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-|  hImg  | 整数型 |  -   |  -   |     -      | 图像句柄 |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+HBRUSH __stdcall 
+_brush_create (
+    HIMG hImg,
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _brush_createfromimg, 整数型, "libexdui.dll", "_brush_createfromimg", 公开, 
+    .参数 hImg, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hImg`
+
+Type: **HIMG**
+
+画布句柄
+
+---
+
+### Return Value / 返回值
+
+Type: HBRUSH
+
+创建成功 返回画刷句柄
