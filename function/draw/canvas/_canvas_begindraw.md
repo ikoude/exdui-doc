@@ -26,12 +26,12 @@ _canvas_begindraw (
 
 `hCanvas`
 
-Type: **HANDLE**
+Type: **HCANVAS**
 
-xxx
+画布句柄
 
 ---
 
 ### Return Value / 返回值
 
-Type: INT32
+Type: BOOL
