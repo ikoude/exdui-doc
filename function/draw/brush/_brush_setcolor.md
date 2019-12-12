@@ -2,27 +2,45 @@
 description: 画刷_置颜色
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|   动态库命令    | 返回值类型 |   库文件名   | 参数量 |     备注     |
-| :-------------: | :--------: | :----------: | :----: | :----------: |
-| _brush_setcolor |   整数型   | libexdui.dll |   2    | 设置画刷颜色 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注    |
-| :----: | :----: | :--: | :--: | :--------: | :-------: |
-| hBrush | 整数型 |  -   |  -   |     -      | 画刷句柄  |
-|  argb  | 整数型 |  -   |  -   |            | ARGB 颜色 |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+int __stdcall 
+_brush_setcolor (
+    HBRUSH hBrush,
+    int argb
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _brush_setcolor, 整数型, "libexdui.dll", "_brush_setcolor", 公开, 
+    .参数 hBrush, 整数型,  , 
+    .参数 argb, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hBrush`
+
+Type: **HBRUSH**
+
+画刷句柄
+
+`argb`
+
+Type: **INT32**
+
+ARGB颜色
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+

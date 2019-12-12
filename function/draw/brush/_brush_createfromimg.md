@@ -6,8 +6,8 @@ description: 画刷_创建自图像
 
 ```C++
 HBRUSH __stdcall 
-_brush_create (
-    HIMG hImg,
+_brush_createfromimg (
+    HIMG hImg
 );
 ```
 
@@ -28,7 +28,7 @@ _brush_create (
 
 Type: **HIMG**
 
-画布句柄
+图像句柄
 
 ---
 

@@ -6,8 +6,8 @@ description: 画刷_创建自画布
 
 ```C++
 HBRUSH __stdcall 
-_brush_create (
-    HCANVAS hCanvas,
+_brush_createfromcanvas (
+    HCANVAS hCanvas
 );
 ```
 
