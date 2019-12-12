@@ -2,26 +2,38 @@
 description: 画刷_创建
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _brush_create |  整数型 |  libexdui.dll | 1 | 画刷_创建 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注    |
-| :----: | :----: | :--: | :--: | :--------: | :-------: |
-|  argb  | 整数型 |  -   |  -   |     -      | ARGB 颜色 |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+HBRUSH __stdcall 
+_brush_create (
+    int argb,
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _brush_create, 整数型, "libexdui.dll", "_brush_create", 公开, 
+    .参数 argb, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`argb`
+
+Type: **INT32**
+
+ARGB颜色值
+
+---
+
+### Return Value / 返回值
+
+Type: HBRUSH
+
+创建成功 返回画刷句柄
