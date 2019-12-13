@@ -1,37 +1,64 @@
-Title: _canvas_createfromexdui
-Date: 2019年8月4日11时52分22秒
+---
+description: 画布_创建自引擎句柄
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_createfromexdui |  整数型 |  libexdui.dll | 4 |  创建画布自引擎句柄 | 
+```C++
+int __stdcall 
+_canvas_createfromexdui (
+    HANDLE hExDui,
+    int    width,
+    int    height,
+    DWORD  dwFlags
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hExDui |  整数型 | - | - |  -| 
-width |  整数型 | - | - |  -| 
-height |  整数型 | - | - |  -| 
-dwFlags |  整数型 | - | - |  -|  CVF_
+.DLL命令 _canvas_createfromexdui, 整数型, "libexdui.dll", "_canvas_createfromexdui", 公开, 
+    .参数 hExDui, 整数型,  , 
+    .参数 width, 整数型,  , 
+    .参数 height, 整数型,  , 
+    .参数 dwFlags, 整数型,  , 
 ```
 
-### 常量列表
-```table
-常量名   |   常量值(十六进制)(-)   |   常量值(十进制)(-)   |   备注
-CVF_GDI_COMPATIBLE|1|1|需要与GDI交互
+---
 
-```
+### Parameters / 参数
 
+`hExDui`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+引擎句柄
+
+`width`
+
+Type: **INT32**
+
+画布宽度
+
+`height`
+
+Type: **HANDLE**
+
+画布高度
+
+`dwFlags`
+
+Type: **DWORD**
+
+标识 参见 [CVF](../../../const/CVF.md)
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+创建画布自引擎句柄<br>
+成功返回画布句柄, 失败返回 NULL
