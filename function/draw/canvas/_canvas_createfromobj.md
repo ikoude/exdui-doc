@@ -1,38 +1,72 @@
-Title: _canvas_createfromobj
-Date: 2019年8月4日11时52分21秒
+---
+description: 画布_创建自自组件句柄
+---
 
+### Syntax / 函数原型
 
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_createfromobj |  整数型 |  libexdui.dll | 5 |  创建画布自组件句柄。成功返回画布句柄，失败返回0 | 
+```C++
+int __stdcall 
+_canvas_createfromobj (
+    HANDLE hObj,
+    int    width,
+    int    height,
+    int    dwFlags,
+    int*   nError
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hObj |  整数型 | - | - |  -| 
-uWidth |  整数型 | - | - |  -| 
-uHeight |  整数型 | - | - |  -| 
-dwFlags |  整数型 | - | - |  -|  CVF_
-nError |  整数型 | ★ | - |  -| 
+.DLL命令 _canvas_createfromobj, 整数型, "libexdui.dll", "_canvas_createfromobj", 公开, 
+    .参数 hObj, 整数型,  , 
+    .参数 uWidth, 整数型,  , 
+    .参数 uHeight, 整数型,  , 
+    .参数 dwFlags, 整数型,  , 
+    .参数 nError, 整数型, 传址 , 
 ```
 
-### 常量列表
-```table
-常量名   |   常量值(十六进制)(-)   |   常量值(十进制)(-)   |   备注
-CVF_GDI_COMPATIBLE|1|1|需要与GDI交互
+---
 
-```
+### Parameters / 参数
 
+`hObj`
 
-### 示例
-#### 易语言
-```c
+Type: **HANDLE**
 
-```
+组件句柄
+
+`uWidth`
+
+Type: **INT32**
+
+画布宽度
+
+`uHeight`
+
+Type: **INT32**
+
+画布高度
+
+`dwFlags`
+
+Type: **DWORD**
+
+标识 参见 [CVF](../../../const/CVF.md)
+
+`nError`
+
+Type: **INT32***
+
+错误代码
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+创建画布自组件句柄<br>
+成功返回画布句柄, 失败返回 NULL
