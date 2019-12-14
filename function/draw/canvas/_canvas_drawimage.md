@@ -62,6 +62,8 @@ Type: **INT32**
 
 透明度 0-255
 
+---
+
 ### Return Value / 返回值
 
 Type: BOOL

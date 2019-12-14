@@ -1,39 +1,111 @@
-Title: _canvas_drawtext
-Date: 2019年8月4日11时52分22秒
+---
+description: 画布_画圆角矩形
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_drawtext |  逻辑型 |  libexdui.dll | 10 |  | 
+```C++
+bool __stdcall 
+_canvas_drawroundedrect (
+    HCANVAS hCanvas,
+    HBRUSH  hBrush,
+    float   left,
+    float   top,
+    float   right,
+    float   bottom,
+    float   radiusX,
+    float   radiusY,
+    float   strokeWidth,
+    int     strokeStyle
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
-hFont |  整数型 | - | - |  -|  如果为0则使用默认字体句柄
-crText |  整数型 | - | - |  -| 
-lpwzText |  整数型 | - | - |  -| 
-dwLen |  整数型 | - | - |  -|  -1则自动计算尺寸(必须是指向空字符串的指针)
-dwDTFormat |  整数型 | - | - |  -|  #DT_
-left |  小数型 | - | - |  -| 
-top |  小数型 | - | - |  -| 
-right |  小数型 | - | - |  -| 
-bottom |  小数型 | - | - |  -| 
+.DLL命令 _canvas_drawroundedrect, 逻辑型, "libexdui.dll", "_canvas_drawroundedrect", 公开, 
+    .参数 hCanvas, 整数型,  , 
+    .参数 hBrush, 整数型,  , 
+    .参数 left, 小数型,  , 
+    .参数 top, 小数型,  , 
+    .参数 right, 小数型,  , 
+    .参数 bottom, 小数型,  , 
+    .参数 radiusX, 小数型,  , 
+    .参数 radiusY, 小数型,  , 
+    .参数 strokeWidth, 小数型,  , 
+    .参数 strokeStyle, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hCanvas`
 
-### 示例
-#### 易语言
-```c
+Type: **HCANVAS**
 
-```
+画布句柄
+
+`hBrush`
+
+Type: **HBRUSH**
+
+画刷句柄
+
+`left`
+
+Type: **FLOAT**
+
+左边
+
+`top`
+
+Type: **FLOAT**
+
+顶边
+
+`right`
+
+Type: **FLOAT**
+
+右边
+
+`bottom`
+
+Type: **FLOAT**
+
+底边
+
+`radiusX`
+
+Type: **FLOAT**
+
+半径X
+
+`radiusY`
+
+Type: **FLOAT**
+
+半径Y
+
+`strokeWidth`
+
+Type: **FLOAT**
+
+描线宽度
+
+`strokeStyle`
+
+Type: **INT32**
+
+描线风格
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+绘制圆角矩形

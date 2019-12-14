@@ -1,5 +1,5 @@
 ---
-description: 画布_创建自自组件句柄
+description: 画布_创建自组件句柄
 ---
 
 ### Syntax / 函数原型
