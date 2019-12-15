@@ -6,7 +6,7 @@ description: 画布_取上下文
 
 ```C++
 int __stdcall 
-_canvas_flush (
+_canvas_getcontext (
     HCANVAS hCanvas,
     int     nType
 );

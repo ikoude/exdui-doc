@@ -6,7 +6,7 @@ description: 画布_取宽高
 
 ```C++
 HDC __stdcall 
-_canvas_flush (
+_canvas_getsize (
     HCANVAS hCanvas,
     int*    width,
     int*    height

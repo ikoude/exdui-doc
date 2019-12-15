@@ -6,7 +6,7 @@ description: 画布_取设备上下文
 
 ```C++
 HDC __stdcall 
-_canvas_flush (
+_canvas_getdc (
     HCANVAS hCanvas
 );
 ```
