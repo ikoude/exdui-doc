@@ -1,32 +1,56 @@
-Title: _canvas_getsize
-Date: 2019年8月4日11时52分22秒
+---
+description: 画布_取宽高
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_getsize |  逻辑型 |  libexdui.dll | 3 |  ok | 
+```C++
+HDC __stdcall 
+_canvas_flush (
+    HCANVAS hCanvas,
+    int*    width,
+    int*    height
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
-width |  整数型 | ★ | - |  -| 
-height |  整数型 | ★ | - |  -| 
+.DLL命令 _canvas_getsize, 逻辑型, "libexdui.dll", "_canvas_getsize", 公开, 
+    .参数 hCanvas, 整数型,  , 
+    .参数 width, 整数型, 传址 , 
+    .参数 height, 整数型, 传址 , 
 ```
 
+---
+
+### Parameters / 参数
+
+`hCanvas`
+
+Type: **HCANVAS**
+
+画布句柄
+
+`width`
+
+Type: **INT32***
+
+宽度
+
+`height`
+
+Type: **INT32***
+
+高度
 
 
+---
 
-### 示例
-#### 易语言
-```c
+### Return Value / 返回值
 
-```
+Type: BOOL
+
+取画布宽高
