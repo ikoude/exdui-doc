@@ -1,30 +1,39 @@
-Title: _canvas_releasedc
-Date: 2019年8月4日11时52分21秒
+---
+description: 画布_释放设备上下文
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_releasedc |  逻辑型 |  libexdui.dll | 1 |  | 
+```C++
+BOOL __stdcall 
+_canvas_releasedc (
+    HCANVAS hCanvas
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
+.DLL命令 _canvas_releasedc, 逻辑型, "libexdui.dll", "_canvas_releasedc", 公开, 
+    .参数 hCanvas, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hCanvas`
 
-### 示例
-#### 易语言
-```c
+Type: **HCANVAS**
 
-```
+画布句柄
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+释放设备上下文
