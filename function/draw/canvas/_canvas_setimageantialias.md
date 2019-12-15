@@ -1,31 +1,48 @@
-Title: _canvas_setimageantialias
-Date: 2019年8月4日11时52分23秒
+---
+description: 画布_置图像抗锯齿
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_setimageantialias |  逻辑型 |  libexdui.dll | 2 |  设置画布图像抗锯齿 | 
+```C++
+BOOL __stdcall 
+_canvas_setimageantialias (
+    HCANVAS hCanvas,
+    bool    antialias
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
-antialias |  逻辑型 | - | - |  -|  是否抗锯齿
-```
-
-
-
-
-### 示例
-#### 易语言
-```c
+.DLL命令 _canvas_setimageantialias, 逻辑型, "libexdui.dll", "_canvas_setimageantialias", 公开, 
+    .参数 hCanvas, 整数型,  , 
+    .参数 antialias, 逻辑型,  , 
 
 ```
+
+---
+
+### Parameters / 参数
+
+`hCanvas`
+
+Type: **HCANVAS**
+
+画布句柄
+
+`antialias`
+
+Type: **BOOL**
+
+是否抗锯齿
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+设置画布图像抗锯齿
