@@ -31,7 +31,7 @@ _canvas_drawroundedrect (
     .参数 crText, 整数型,  , 
     .参数 lpwzText, 整数型,  , 
     .参数 dwLen, 整数型,  , 
-    .参数 dwDTFormat, 整数型,  , #DT_
+    .参数 dwDTFormat, 整数型,  ,
     .参数 left, 小数型,  , 
     .参数 top, 小数型,  , 
     .参数 right, 小数型,  , 
@@ -59,7 +59,7 @@ Type: **HFONT**
 
 Type: **INT32**
 
-xxx
+\-
 
 `lpwzText`
 
