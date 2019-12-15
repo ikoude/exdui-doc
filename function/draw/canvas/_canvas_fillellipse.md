@@ -38,7 +38,7 @@ _canvas_fillellipse (
 
 Type: **HCANVAS**
 
-xxx
+画布句柄
 
 `hBrush`
 
