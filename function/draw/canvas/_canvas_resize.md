@@ -1,33 +1,63 @@
-Title: _canvas_resize
-Date: 2019年8月4日11时52分21秒
+---
+description: 画布_调整大小
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_resize |  逻辑型 |  libexdui.dll | 4 |  重新设置尺寸。 | 
+```C++
+BOOL __stdcall 
+_canvas_resize (
+    HCANVAS hCanvas,
+    int     width,
+    int     height,
+    bool    fCopy
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
-width |  整数型 | - | - |  -| 
-height |  整数型 | - | - |  -| 
-fCopy |  逻辑型 | - | - |  -| 
+.DLL命令 _canvas_resize, 逻辑型, "libexdui.dll", "_canvas_resize", 公开, 重新设置尺寸。
+    .参数 hCanvas, 整数型,  , 
+    .参数 width, 整数型,  , 
+    .参数 height, 整数型,  , 
+    .参数 fCopy, 逻辑型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hCanvas`
 
-### 示例
-#### 易语言
-```c
+Type: **HCANVAS**
 
-```
+画布句柄
+
+`width`
+
+Type: **INT32**
+
+画布宽度
+
+`height`
+
+Type: **HANDLE**
+
+画布高度
+
+`fCopy`
+
+Type: **逻辑型**
+
+是否拷贝原图像
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+调整画布大小
