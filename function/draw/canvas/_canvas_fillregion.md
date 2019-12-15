@@ -9,7 +9,7 @@ bool __stdcall
 _canvas_fillregion (
     HCANVAS hCanvas,
     HRGN    hRgn,
-    HBRUSH  hBrush,
+    HBRUSH  hBrush
 );
 ```
 
