@@ -1,31 +1,51 @@
-Title: _canvas_settextantialiasmode
-Date: 2019年8月4日11时52分23秒
+---
+description: 画布_置文本抗锯齿
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_settextantialiasmode |  逻辑型 |  libexdui.dll | 2 |  设置画布文本抗锯齿模式 | 
+```C++
+BOOL __stdcall 
+_canvas_settextantialiasmode (
+    HCANVAS hCanvas,
+    int     textAntialiasMode
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
-textAntialiasMode |  整数型 | - | - |  -|  0.不抗锯齿 1.抗锯齿 2.ClearType
+.DLL命令 _canvas_settextantialiasmode, 逻辑型, "libexdui.dll", "_canvas_settextantialiasmode", 公开, 
+    .参数 hCanvas, 整数型,  , 
+    .参数 textAntialiasMode, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hCanvas`
 
-### 示例
-#### 易语言
-```c
+Type: **HCANVAS**
 
-```
+画布句柄
+
+`textAntialiasMode`
+
+Type: **INT32**
+
+| Value | Meaning |
+| --    | --      |
+| 0x00  | 不抗锯齿  |
+| 0x01  | 抗锯齿  |
+| 0x02  | ClearType  |
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+设置画布文本抗锯齿模式
