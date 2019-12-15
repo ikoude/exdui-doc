@@ -22,7 +22,7 @@ description: ExDirectUI 4.1 Manual
 
 ## Github
 
-本文档源码托管在 [https://github.com/ikoude/exdui-doc](https://github.com/ikoude/exdui-doc)
+本文档源码托管在 [https://github.com/ikoude/exdui-doc](https://github.com/ikoude/exdui-doc)<br>
 ExDirectUI最新版 [https://github.com/ikoude/ExDirectUI4.1/releases](https://github.com/ikoude/ExDirectUI4.1/releases)
 > 本文档持续更新中, 欢迎PR
 
