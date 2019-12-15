@@ -19,7 +19,7 @@ _canvas_resize (
 ```Elang
 .版本 2
 
-.DLL命令 _canvas_resize, 逻辑型, "libexdui.dll", "_canvas_resize", 公开, 重新设置尺寸。
+.DLL命令 _canvas_resize, 逻辑型, "libexdui.dll", "_canvas_resize", 公开, 
     .参数 hCanvas, 整数型,  , 
     .参数 width, 整数型,  , 
     .参数 height, 整数型,  , 
