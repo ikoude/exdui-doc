@@ -1,30 +1,39 @@
-Title: _canvas_enddraw
-Date: 2019年8月4日11时52分21秒
+---
+description: 画布_结束绘制
+---
 
+### Syntax / 函数原型
 
-
-### 声明
-
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- _canvas_enddraw |  逻辑型 |  libexdui.dll | 1 |  ok | 
+```C++
+bool __stdcall 
+_canvas_enddraw (
+    HCANVAS hCanvas
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hCanvas |  整数型 | - | - |  -| 
+.DLL命令 _canvas_enddraw, 逻辑型, "libexdui.dll", "_canvas_enddraw", 公开,
+    .参数 hCanvas, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hCanvas`
 
-### 示例
-#### 易语言
-```c
+Type: **HCANVAS**
 
-```
+画布句柄
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+结束绘制
