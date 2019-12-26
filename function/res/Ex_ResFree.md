@@ -1,28 +1,35 @@
-Title: Ex_ResFree
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex_释放资源
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ResFree |   |  libexdui.dll | 1 |  释放资源 | 
+```C++
+void __stdcall 
+Ex_ResFree (
+    HRESOURCE hRes,
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hRes |  整数型 | - | - |  -| 
+.DLL命令 Ex_ResFree, , "libexdui.dll", "Ex_ResFree", 公开, 
+    .参数 hRes, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`hRes`
 
-### 示例
-#### 易语言
-```c
+Type: **HRESOURCE**
 
-```
+资源包句柄
+
+---
+
+释放一个资源
