@@ -1,28 +1,39 @@
-Title: Ex_ResLoadFromFile
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex_加载资源自文件
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ResLoadFromFile |  整数型 |  libexdui.dll | 1 |  从文件加载资源 | 
+```C++
+HRESOURCE __stdcall 
+Ex_ResLoadFromFile (
+    LPCWSTR lpwzFile
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-lpwzFile |  整数型 | - | - |  -| 
+.DLL命令 Ex_ResLoadFromFile, 整数型, "libexdui.dll", "Ex_ResLoadFromFile", 公开, 
+    .参数 lpwzFile, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`lpwzFile`
 
-### 示例
-#### 易语言
-```c
+Type: **LPCWSTR**
 
-```
+文件路径
+
+---
+
+### Return Value / 返回值
+
+Type: HRESOURCE
+
+从文件加载资源
