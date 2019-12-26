@@ -1,31 +1,60 @@
-Title: Ex_ResGetFile
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex_获取资源文件
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ResGetFile |  逻辑型 |  libexdui.dll | 4 |  获取资源文件 | 
+```C++
+void __stdcall 
+Ex_ResGetFile (
+    HRESOURCE hRes,
+    LPCWSTR   lpwzPath,
+    LPVOID    lpFile,
+    DWORD*    dwFileLen
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-hRes |  整数型 | - | - |  -| 
-lpwzPath |  整数型 | - | - |  -| 
-lpFile |  整数型 | ★ | - |  -|  [out]文件数据指针.用户不应该释放该内存.
-dwFileLen |  整数型 | ★ | - |  -|  [out]文件尺寸.
+.DLL命令 Ex_ResGetFile, 逻辑型, "libexdui.dll", "Ex_ResGetFile", 公开, 
+    .参数 hRes, 整数型,  , 
+    .参数 lpwzPath, 整数型,  , 
+    .参数 lpFile, 整数型, 传址 , [out]
+    .参数 dwFileLen, 整数型, 传址 , [out]文件尺寸.
 ```
 
+---
 
+### Parameters / 参数
 
+`hRes`
 
-### 示例
-#### 易语言
-```c
+Type: **HRESOURCE**
 
-```
+资源包句柄
+
+`lpwzPath`
+
+Type: **LPCWSTR**
+
+文件在资源内的路径
+
+`lpFile`
+
+Type: **LPVOID**
+
+指向该文件数据的指针<br>
+无需释放该内存
+
+`dwFileLen`
+
+Type: **DWORD***
+
+文件尺寸
+
+---
+
+获取资源文件
