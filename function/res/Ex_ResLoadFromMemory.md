@@ -1,29 +1,47 @@
-Title: Ex_ResLoadFromMemory
-Date: 2019年8月4日11时52分22秒
+---
+description: Ex_加载资源自内存
+---
 
-### 声明
+### Syntax / 函数原型
 
-
-```table
-动态库命令(-) | 返回值类型(-) |   库文件名(-) | 参数量(-) | 备注(-)
-
- Ex_ResLoadFromMemory |  整数型 |  libexdui.dll | 2 |  从内存加载资源 | 
+```C++
+HRESOURCE __stdcall 
+Ex_ResLoadFromMemory (
+    LPVOID lpData,
+    DWORD  dwDataLen
+);
 ```
 
+##### 易语言声明
 
-### 参数列表
+```Elang
+.版本 2
 
-```table
-参数名   |   类型(-)   |   传址(-)   |   数组(-)   |   可空（NULL）(-)   |   备注   |
-lpData |  整数型 | - | - |  -| 
-dwDataLen |  整数型 | - | - |  -| 
+.DLL命令 Ex_ResLoadFromMemory, 整数型, "libexdui.dll", "Ex_ResLoadFromMemory", 公开, 
+    .参数 lpData, 整数型,  , 
+    .参数 dwDataLen, 整数型,  , 
 ```
 
+---
 
+### Parameters / 参数
 
+`lpData`
 
-### 示例
-#### 易语言
-```c
+Type: **LPCWSTR**
 
-```
+指向资源的内存指针
+
+`dwDataLen`
+
+Type: **DWORD**
+
+长度
+
+---
+
+### Return Value / 返回值
+
+Type: HRESOURCE
+
+从内存加载资源
