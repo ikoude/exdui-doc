@@ -5,7 +5,7 @@ description: Ex_获取资源文件
 ### Syntax / 函数原型
 
 ```C++
-void __stdcall 
+bool __stdcall 
 Ex_ResGetFile (
     HRESOURCE hRes,
     LPCWSTR   lpwzPath,
@@ -56,5 +56,9 @@ Type: **DWORD***
 文件尺寸
 
 ---
+
+### Return Value / 返回值
+
+Type: BOOL
 
 获取资源文件
