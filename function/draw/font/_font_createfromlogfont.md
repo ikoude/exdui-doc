@@ -2,23 +2,38 @@
 description: 字体_创建自逻辑字体
 ---
 
+### Syntax / 函数原型
 
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _font_createfromlogfont |  整数型 |  libexdui.dll | 1 | 字体_创建自逻辑字体，成功返回真(1)，失败返回假(0) |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-| lpLogfont  | 整数型 |  -   |  -   |     -      | 逻辑字体指针 |
-
-# 示例
-
-## 易语言
-```c
-
+```C++
+HFONT __stdcall 
+_font_createfromlogfont (
+    int *lpLogfont
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _font_createfromlogfont, 整数型, "libexdui.dll", "_font_createfromlogfont", 公开, 
+    .参数 lpLogfont, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`lpLogfont`
+
+Type: **INT32**
+
+逻辑字体指针
+
+---
+
+### Return Value / 返回值
+
+Type: HFONT
+
+创建成功 返回新的字体句柄
