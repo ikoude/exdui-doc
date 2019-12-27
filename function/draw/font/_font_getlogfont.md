@@ -1,27 +1,47 @@
 ---
-description: 字体_取上下文
+description: 字体_取逻辑字体
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _font_getlogfont |  整数型 |  libexdui.dll | 2 | 字体_取逻辑字体 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-| hFont  | 整数型 |  -   |  -   |     -      | 字体句柄 |
-| lpLogFont  | 整数型 |  -   |  -   |     -      | 逻辑字体指针 |
-
-## 示例
-
-### 易语言
-
-```basic
-
+```C++
+bool __stdcall 
+_font_getlogfont (
+    HFONT hFont,
+    int   *lpLogFont
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _font_getlogfont, 逻辑型, "libexdui.dll", "_font_getlogfont", 公开, 获取逻辑字体
+    .参数 hFont, 整数型,  , 
+    .参数 lpLogFont, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hFont`
+
+Type: **HFONT**
+
+字体句柄
+
+`lpLogFont`
+
+Type: **INT32***
+
+保存逻辑字体的指针
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+获取逻辑字体
