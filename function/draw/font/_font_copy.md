@@ -34,6 +34,6 @@ Type: **HFONT**
 
 ### Return Value / 返回值
 
-Type: HBRUSH
+Type: HFONT
 
 复制成功 返回新的字体句柄

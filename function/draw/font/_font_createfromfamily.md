@@ -50,6 +50,6 @@ Type: **DWORD**
 
 ### Return Value / 返回值
 
-Type: HBRUSH
+Type: HFONT
 
 创建成功 返回新的字体句柄
