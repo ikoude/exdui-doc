@@ -28,7 +28,7 @@ Ex_ResFree (
 
 Type: **HRESOURCE**
 
-资源包句柄
+资源句柄
 
 ---
 
