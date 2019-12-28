@@ -2,29 +2,62 @@
 description: 矩阵_缩放
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _matrix_scale |  整数型 |  libexdui.dll | 4 | 矩阵_缩放，成功返回0 |
-
-## 参数列表
-
-| 参数名  |  类型  | 传址 | 数组 | 可空(NULL) |     备注     |
-| :-----: | :----: | :--: | :--: | :--------: | :----------: |
-| pMatrix | 整数型 |  -   |  -   |     -      |   矩阵指针   |
-| scaleX  | 小数型 |  -   |  -   |     -      | 缩放横向坐标 |
-| scaleY  | 小数型 |  -   |  -   |     -      | 缩放纵向坐标 |
-|  order  | 整数型 |  -   |  -   |     -      |     方向     |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+bool __stdcall 
+_matrix_scale (
+    int *pMatrix,
+    float scaleX,
+    float scaleY,
+    int order
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _matrix_scale, 逻辑型, "libexdui.dll", "_matrix_scale", 公开, 
+    .参数 pMatrix, 整数型,  , 
+    .参数 scaleX, 小数型,  , 
+    .参数 scaleY, 小数型,  , 
+    .参数 order, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`pMatrix`
+
+Type: **INT32***
+
+矩阵指针
+
+`scaleX`
+
+Type: **FLOAT**
+
+横向缩放倍数
+
+`scaleY`
+
+Type: **FLOAT**
+
+纵向缩放倍数
+
+`order`
+
+Type: **INT32**
+
+顺序
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+缩放矩阵
