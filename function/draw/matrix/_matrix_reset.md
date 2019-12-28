@@ -2,27 +2,38 @@
 description: 矩阵_重置
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _matrix_reset | 逻辑型 |  libexdui.dll | 1 | 矩阵_重置，成功返回0 |
-
-## 参数列表
-
-| 参数名  |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :-----: | :----: | :--: | :--: | :--------: | :------: |
-| pMatrix | 整数型 |  -   |  -   |     -      | 矩阵指针 |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+bool __stdcall 
+_matrix_reset (
+    int *pMatrix,
+);
 ```
 
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _matrix_reset, 逻辑型, "libexdui.dll", "_matrix_reset", 公开, 
+    .参数 pMatrix, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`pMatrix`
+
+Type: **INT32***
+
+欲重置的矩阵指针
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+重置矩阵
