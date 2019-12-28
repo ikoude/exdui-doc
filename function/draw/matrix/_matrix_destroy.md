@@ -1,32 +1,39 @@
 ---
-description: 图像_复制
+description: 矩阵_销毁
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _matrix_destroy |  整数型 |  libexdui.dll | 1 | 矩阵_销毁，成功返回0 |
-
-## 参数列表
-
-| 参数名  |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :-----: | :----: | :--: | :--: | :--------: | :------: |
-| pMatrix | 整数型 |  -   |  -   |     -      | 矩阵指针 |
-
-
-# 示例
-
-## 易语言
-
-```basic
-如果 (_matrix_destroy (pMatrix) ＝ 0)
-    输出调试文本 (“销毁失败”)
- 否则
-	输出调试文本 (“销毁成功”)
+```C++
+bool __stdcall 
+_matrix_destroy (
+    int *pMatrix,
+);
 ```
 
+##### 易语言声明
 
+```Elang
+.版本 2
+
+.DLL命令 _matrix_destroy, 逻辑型, "libexdui.dll", "_matrix_destroy", 公开, 
+    .参数 pMatrix, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`pMatrix`
+
+Type: **INT32***
+
+欲销毁的矩阵指针
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+销毁矩阵
