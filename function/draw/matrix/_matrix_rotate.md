@@ -2,30 +2,52 @@
 description: 矩阵_旋转
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|动态库命令| 返回值类型|库文件名|参数量| 备注|
-|:--:|:--:|:--:|:--:|:--:|
-| _matrix_rotate |  整数型 |  libexdui.dll | 3 | 旋转矩阵 |
-
-## 参数列表
-
-| 参数名  |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :-----: | :----: | :--: | :--: | :--------: | :------: |
-| pMatrix | 整数型 |  -   |  -   |     -      | 矩阵指针 |
-| fAngle  | 小数型 |  -   |  -   |     -      |   角度   |
-|  order  | 整数型 |  -   |  -   |     -      |   方向   |
-
-
-# 示例
-
-## 易语言
-
-```basic
-
+```C++
+bool __stdcall 
+_matrix_rotate (
+    int *pMatrix,
+);
 ```
 
+##### 易语言声明
 
+```Elang
+.版本 2
+
+.DLL命令 _matrix_rotate, 逻辑型, "libexdui.dll", "_matrix_rotate", 公开, 
+    .参数 pMatrix, 整数型,  , 
+    .参数 fAngle, 小数型,  , 
+    .参数 order, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`pMatrix`
+
+Type: **INT32***
+
+矩阵指针
+
+`fAngle`
+
+Type: **FLOAT**
+
+旋转角度
+
+`order`
+
+Type: **INT32**
+
+顺序
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+旋转矩阵
