@@ -5,7 +5,7 @@ description: 区域_合并
 ### Syntax / 函数原型
 
 ```C++
-bool __stdcall 
+int __stdcall 
 _rgn_combine (
     HRGN hRgnSrc,
     HRGN hRgnDst,
