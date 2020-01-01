@@ -7,7 +7,7 @@ description: 路径_添加线
 ```C++
 int __stdcall 
 _path_addline (
-    int   hPath,
+    HPATH hPath,
     float x1,
     float y1,
     float x2,

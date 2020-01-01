@@ -7,7 +7,7 @@ description: 路径_添加弧
 ```C++
 int __stdcall 
 _path_addarc (
-    int   hPath,
+    HPATH hPath,
     float x1,
     float y1,
     float x2,
