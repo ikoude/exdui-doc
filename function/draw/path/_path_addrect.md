@@ -2,30 +2,70 @@
 description: 路径_添加矩形
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|  动态库命令  | 返回值类型 |   库文件名   | 参数量 |     备注      |
-| :----------: | :--------: | :----------: | :----: | :-----------: |
-| _path_addarc |   整数型   | libexdui.dll |   5    | 路径_添加矩形 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-| hPath  | 整数型 |  -   |  -   |     -      | 路径指针 |
-|  left  | 小数型 |  -   |  -   |     -      |   左边   |
-|  top   | 小数型 |  -   |  -   |     -      |   顶边   |
-| right  | 小数型 |  -   |  -   |     -      |   右边   |
-| bottom | 小数型 |  -   |  -   |     -      |   底边   |
-
-
-# 示例
-
-## 易语言
-
-```c
-
+```C++
+int __stdcall 
+_path_addrect (
+    HPATH hPath,
+    float left,
+    float top,
+    float right,
+    float bottom
+);
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 _path_addrect, 整数型, "libexdui.dll", "_path_addrect", 公开, 
+    .参数 hPath, 整数型,  , 
+    .参数 left, 小数型,  , 
+    .参数 top, 小数型,  , 
+    .参数 right, 小数型,  , 
+    .参数 bottom, 小数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hPath`
+
+Type: **HPATH**
+
+路径句柄
+
+`left`
+
+Type: **FLOAT**
+
+矩形左边
+
+`top`
+
+Type: **FLOAT**
+
+矩形顶边
+
+`right`
+
+Type: **FLOAT**
+
+矩形右边
+
+`bottom`
+
+Type: **FLOAT**
+
+矩形底边
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+添加矩形
