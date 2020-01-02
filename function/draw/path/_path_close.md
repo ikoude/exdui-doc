@@ -2,26 +2,38 @@
 description: 路径_关闭
 ---
 
+### Syntax / 函数原型
 
+```C++
+int __stdcall 
+_path_close (
+    HPATH hPath
+);
+```
 
+##### 易语言声明
 
-## 声明
+```Elang
+.版本 2
 
-| 动态库命令  | 返回值类型 |   库文件名   | 参数量 |   备注    |
-| :---------: | :--------: | :----------: | :----: | :-------: |
-| _path_close |   整数型   | libexdui.dll |   1    | 路径_关闭 |
+.DLL命令 _path_close, 整数型, "libexdui.dll", "_path_close", 公开, 
+    .参数 hPath, 整数型,  , 
+```
 
+---
 
+### Parameters / 参数
 
-## 参数列表
+`hPath`
 
-|   参数名   |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :--------: | :----: | :--: | :--: | :--------: | :------: |
-|   hPath    | 整数型 |  -   |  -   |     -      | 路径指针 |
+Type: **HPATH**
 
+路径句柄
 
+---
 
-# 示例
+### Return Value / 返回值
 
-## 易语言
+Type: INT32
 
+关闭路径
