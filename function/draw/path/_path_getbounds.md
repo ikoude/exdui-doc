@@ -2,22 +2,46 @@
 description: 路径_取边界矩形
 ---
 
+### Syntax / 函数原型
 
+```C++
+int __stdcall 
+_path_getbounds (
+    HPATH hPath,
+    RECT* lpBounds
+);
+```
 
+##### 易语言声明
 
-## 声明
+```Elang
+.版本 2
 
-|   动态库命令    | 返回值类型 |   库文件名   | 参数量 |      备注      |
-| :-------------: | :--------: | :----------: | :----: | :------------: |
-| _path_getbounds |   整数型   | libexdui.dll |   2    | 取路径边界矩形 |
+.DLL命令 _path_getbounds, 整数型, "libexdui.dll", "_path_getbounds", 公开, 取路径边界矩形
+    .参数 hPath, 整数型,  , 
+    .参数 lpBounds, 整数型,  , 
+```
 
-## 参数列表
+---
 
-|  参数名  |  类型  | 传址 | 数组 | 可空(NULL) |      备注      |
-| :------: | :----: | :--: | :--: | :--------: | :------------: |
-|  hPath   | 整数型 |  -   |  -   |     -      |    路径指针    |
-| lpBounds | 整数型 |  -   |  -   |     -      | RECTF ( 矩形 ) |
+### Parameters / 参数
 
-# 示例
+`hPath`
 
-## 易语言
+Type: **HPATH**
+
+路径句柄
+
+`lpBounds`
+
+Type: **RECT***
+
+路径的边界矩形
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+取路径边界矩形
