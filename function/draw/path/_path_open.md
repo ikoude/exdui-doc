@@ -16,7 +16,7 @@ _path_open (
 ```Elang
 .版本 2
 
-.DLL命令 _path_open, 整数型, "libexdui.dll", "_path_open", 公开, 打开路径
+.DLL命令 _path_open, 整数型, "libexdui.dll", "_path_open", 公开, 
     .参数 hPath, 整数型,  , 
 
 ```
