@@ -2,28 +2,56 @@
 description: 控件_客户区坐标到窗口坐标
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|      动态库命令      | 返回值类型 |   库文件名   | 参数量 |         备注         |
-| :------------------: | :--------: | :----------: | :----: | :------------------: |
-| Ex_ObjClientToWindow |   逻辑型   | libexdui.dll |   3    | 客户区坐标到窗口坐标 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-|  hObj  | 整数型 |  -   |  -   |     -      | 控件句柄 |
-|   x    | 整数型 |  √   |  -   |     -      | 横向坐标 |
-|   y    | 整数型 |  √   |  -   |     -      | 纵向坐标 |
-
-
-# 示例
-
-## 易语言
-
-```basic
+```C++
+bool __stdcall 
+Ex_ObjClientToWindow (
+    HOBJ hObj,
+    int* x,
+    int* y
+);
 
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 Ex_ObjClientToWindow, 逻辑型, "libexdui.dll", "Ex_ObjClientToWindow", 公开, 
+    .参数 hObj, 整数型,  , 
+    .参数 x, 整数型, 传址 , 
+    .参数 y, 整数型, 传址 , 
+
+```
+
+---
+
+### Parameters / 参数
+
+`hObj`
+
+Type: **HOBJ**
+
+控件句柄
+
+`x`
+
+Type: **INT32***
+
+横坐标
+
+`y`
+
+Type: **INT32***
+
+纵坐标
+
+---
+
+### Return Value / 返回值
+
+Type: BOOL
+
+客户区坐标到窗口坐标
