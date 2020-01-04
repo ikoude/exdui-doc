@@ -5,7 +5,7 @@ description: 控件_客户区坐标到屏幕坐标
 ### Syntax / 函数原型
 
 ```C++
-int __stdcall 
+bool __stdcall 
 Ex_ObjClientToScreen (
     HOBJ hObj,
     int* x,
@@ -51,6 +51,6 @@ Type: **INT32***
 
 ### Return Value / 返回值
 
-Type: INT32
+Type: BOOL
 
 客户区坐标到屏幕坐标
