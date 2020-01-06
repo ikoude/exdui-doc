@@ -2,26 +2,39 @@
 description: 控件_销毁
 ---
 
+### Syntax / 函数原型
 
-
-
-## 声明
-
-|  动态库命令   | 返回值类型 |   库文件名   | 参数量 |   备注   |
-| :-----------: | :--------: | :----------: | :----: | :------: |
-| Ex_ObjDestroy |   整数型   | libexdui.dll |   1    | 销毁控件 |
-
-## 参数列表
-
-| 参数名 |  类型  | 传址 | 数组 | 可空(NULL) |   备注   |
-| :----: | :----: | :--: | :--: | :--------: | :------: |
-|  hObj  | 整数型 |  -   |  -   |     -      | 控件句柄 |
-
-
-# 示例
-
-## 易语言
-
-```basic
+```C++
+int __stdcall 
+Ex_ObjDestroy (
+    HOBJ hObj
+);
 
 ```
+
+##### 易语言声明
+
+```Elang
+.版本 2
+
+.DLL命令 Ex_ObjDestroy, 整数型, "libexdui.dll", "Ex_ObjDestroy", 公开, 
+    .参数 hObj, 整数型,  , 
+```
+
+---
+
+### Parameters / 参数
+
+`hObj`
+
+Type: **HOBJ**
+
+控件句柄
+
+---
+
+### Return Value / 返回值
+
+Type: INT32
+
+销毁组件
