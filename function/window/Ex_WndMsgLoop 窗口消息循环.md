@@ -1,5 +1,5 @@
 ---
-description: Ex窗口消息循环
+description: 窗口消息循环。整体流程为：初始化引擎 -> 创建窗口 -> 绑定窗口 -> 设置窗口属性 -> 显示窗口 -> **消息循环** -> 销毁窗口
 ---
 
 ### Syntax / 函数原型
@@ -21,4 +21,4 @@ Ex_WndMsgLoop (void);
 
 ### Return Value / 返回值
 
-Type: INT32
+Type: INT32 整数型
