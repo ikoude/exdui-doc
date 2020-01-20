@@ -12,7 +12,7 @@ description: ExDirectUI 4.1 Manual
 [开始阅读](https://docs.exdui.org)
 
 #### 概要
-- 不大量依赖底层API, ExDUI 允许开发者使用不同的绘制引擎（`GDI/GDI+` 或 `Direct2D` ）
+- 不大量依赖底层API, ExDUI 允许开发者使用不同的绘制引擎 `GDI/GDI+` & `Direct2D`
 - 支持界面布局文件(Layout)与主题文件(Theme)，UI 与业务逻辑分离, 在某些情况下, 界面布局的修改甚至可以不用重新编译或更新整个程序
 - 清晰、高效的界面逻辑, 使界面绘制的效率大大提高。支持父子关系、相对坐标、坐标锁定、光标穿透等控件特性
 - 使用了大量优美高效的动画缓动效果(Animation), 开发者可轻松地制作出各种优秀的动画
